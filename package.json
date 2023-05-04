@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.14",
     "@types/node": "18.16.3",
     "@types/react": "18.2.0",
     "@types/react-dom": "18.2.1",
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.2",
+    "graphql": "^16.6.0",
     "moralis": "^2.19.0",
     "moralis-v1": "^1.12.0",
     "next": "13.3.2",
