@@ -6,7 +6,6 @@ import { useMoralis } from "react-moralis"
 import networkMapping from "../constants/networkMapping.json"
 import GET_ACTIVE_ITEM from "@/constants/subgraphQueries"
 import { useQuery } from "@apollo/client"
-import GraphExample from "./graphExample"
 
 // Recently listed NFTs (how?):
 // we will index the emmited events oof-chain and then read from our database
@@ -55,7 +54,6 @@ export default function Home() {
                         })
                     )}
                 </div>
-                <div>{GraphExample()}</div>
             </div>
         </>
     )

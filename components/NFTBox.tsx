@@ -31,11 +31,11 @@ export const NFTBox = function ({ price, nftAddress, tokenId, marketplaceAddress
     const dispatch = useNotification()
 
     const { runContractFunction: getTokenURI } = useWeb3Contract({
-        abi: nftAbi,
-        contractAddress: nftAddress,
-        functionName: "tokenURI",
+        abi: nftAbi, // provided via --> "../constants/BasicNft.json"
+        contractAddress: nftAddress, // provided properly and address in Sepolia is: 0x2dec7530742c2c0039f8c466afffb6e39f171d8b
+        functionName: "tokenURI", // name of the function in BasicNft.sol
         params: {
-            tokenId: tokenId,
+            tokenId: tokenId, // provided via event, eventhough it is not relevant because --> function tokenURI(uint256 /*tokenId*/)
         },
     })
 
